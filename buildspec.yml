@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo Installing dependencies...
+      - npm install  # This is a placeholder, as we're not using any npm packages
+  pre_build:
+    commands:
+      - echo Running pre-build actions...
+      - echo No pre-build actions needed for this simple example
+  build:
+    commands:
+      - echo Building the project...
+      - echo No build actions needed for this simple example
+  post_build:
+    commands:
+      - echo Running post-build actions...
+      - echo No post-build actions needed for this simple example
+
+artifacts:
+  files:
+    - index.html
+  discard-paths: yes
